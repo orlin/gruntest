@@ -1,0 +1,16 @@
+{ "name": "gruntest"
+, "description": "mirror x 2 on the wall, who's the gruntest of them all?"
+, "keywords": [ "grunt", "test", "meta", "framework", "runner" ]
+, "version": "0.0.0"
+, "homepage": "http://gruntjs.com/"
+, "repository":
+  { "type": "git"
+  , "url": "git://github.com/orlin/gruntest.git"
+  }
+, "author": "Orlin M Bozhinov <om@soundsapiens.com>"
+, "dependencies": {}
+, "licenses":
+  [ { "type": "Unlicense"
+    , "url" : "http://unlicense.org/"
+    } ]
+}
