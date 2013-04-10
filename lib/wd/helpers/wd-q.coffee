@@ -8,19 +8,16 @@ module.exports = (options) ->
 
   behold: ->
     @init({nativeEvents: true})
-      .then =>
-        @able() unless options.silent
+      .then => @able() unless options.silent
 
   able: ->
     @sessionCapabilities()
-      .then (capabilities) ->
-        inspect capabilities
+      .then (capabilities) -> inspect capabilities
 
   # get a waited element by: waits for it to be present, up to options.timeout, then returns it
   getWEBy: (kind, value, cb) ->
     @["waitForElementBy#{kind}"](value, options.timeout, cb)
-      .then =>
-        @["elementBy#{kind}OrNull"](value)
+      .then => @["elementBy#{kind}OrNull"](value)
 
   cYa: (t) ->
     t.end() if t? # using node-tap possible?

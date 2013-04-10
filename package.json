@@ -1,6 +1,6 @@
 { "name": "gruntest"
 , "description": "mirror x 2 on the wall, who's the gruntest of them all?"
-, "keywords": [ "grunt", "test", "meta", "framework", "runner" ]
+, "keywords": [ "grunt", "test", "meta", "framework", "runner", "gruntplugin" ]
 , "version": "0.0.0"
 , "homepage": "http://gruntjs.com/"
 , "repository":
@@ -12,14 +12,19 @@
 , "directories": { "lib": "./lib" }
 , "main": "index"
 , "dependencies":
-  { "grunt": "0.4.x"
-  , "coffee-script": "*"
+  { "coffee-script": "*"
   , "underscore": "*"
   , "eyes": "*"
   , "wd": "*"
   , "wd-sync": "*"
   , "chai": "*"
   , "runtimer": "*"
+  }
+, "peerDependencies": { "grunt": "0.4.x" }
+, "devDependencies":
+  { "grunt": "0.4.x"
+  , "sg": "*"
+  , "grunt-coffeelint": "*"
   }
 , "licenses":
   [ { "type": "Unlicense"
