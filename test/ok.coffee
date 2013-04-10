@@ -1,3 +1,5 @@
+#!/usr/bin/env GRUNTEST=run coffee
+
 assert = require("chai").assert
 
 module.exports = require("../index").wrap (o = {}) ->
