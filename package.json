@@ -8,7 +8,18 @@
   , "url": "git://github.com/orlin/gruntest.git"
   }
 , "author": "Orlin M Bozhinov <om@soundsapiens.com>"
-, "dependencies": {}
+, "contributors": []
+, "directories": { "lib": "./lib" }
+, "main": "index"
+, "dependencies":
+  { "grunt": "0.4.x"
+  , "coffee-script": "*"
+  , "underscore": "*"
+  , "eyes": "*"
+  , "wd": "*"
+  , "wd-sync": "*"
+  , "chai": "*"
+  }
 , "licenses":
   [ { "type": "Unlicense"
     , "url" : "http://unlicense.org/"
