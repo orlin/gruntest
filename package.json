@@ -23,7 +23,7 @@
 , "peerDependencies": { "grunt": "0.4.x" }
 , "devDependencies":
   { "grunt": "0.4.x"
-  , "styleguide": "git://github.com/orlin/sg.git#master"
+  , "sg": "*"
   , "grunt-coffeelint": "*"
   }
 , "licenses":

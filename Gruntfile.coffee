@@ -7,7 +7,9 @@ module.exports = (grunt) ->
 
     coffeelint:
       files: ["lib/**/*.coffee", "test/**/*.coffee"]
-      options: require("styleguide").coffee()
+      options: require("sg").coffee
+        opts:
+          no_stand_alone_at: level: "ignore"
 
   grunt.loadTasks "tasks"
 
