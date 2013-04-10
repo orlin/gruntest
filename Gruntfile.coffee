@@ -6,11 +6,12 @@ module.exports = (grunt) ->
       files: ["test/**/*.coffee"]
 
     coffeelint:
-      files: ["test/**/*.coffee"]
+      files: ["lib/**/*.coffee", "test/**/*.coffee"]
       options:
         indentation:
           value: 2
           level: "warn"
+        max_line_length: level: "ignore"
 
   grunt.loadTasks "tasks"
 
