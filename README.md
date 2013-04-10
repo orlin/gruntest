@@ -1,4 +1,4 @@
-# gruntest -- meta test runner plugin for grunt
+# gruntest -- grunt test tests [![Build Status](https://secure.travis-ci.org/orlin/gruntest.png)](http://travis-ci.org/orlin/gruntest)
 
 
 ## What
