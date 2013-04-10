@@ -23,9 +23,11 @@
 , "peerDependencies": { "grunt": "0.4.x" }
 , "devDependencies":
   { "grunt": "0.4.x"
+  , "grunt-cli": "*"
   , "sg": "*"
   , "grunt-coffeelint": "*"
   }
+, "scripts": { "test": "grunt gruntest" }
 , "licenses":
   [ { "type": "Unlicense"
     , "url" : "http://unlicense.org/"
