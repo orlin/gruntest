@@ -26,6 +26,7 @@
   , "grunt-cli": "*"
   , "sg": "*"
   , "grunt-coffeelint": "*"
+  , "findup-sync": "*"
   }
 , "scripts": { "test": "grunt gruntest" }
 , "licenses":
