@@ -28,7 +28,7 @@
   , "grunt-coffeelint": "*"
   , "findup-sync": "*"
   }
-, "scripts": { "test": "grunt gruntest" }
+, "scripts": { "test": "grunt test" }
 , "licenses":
   [ { "type": "Unlicense"
     , "url" : "http://unlicense.org/"
