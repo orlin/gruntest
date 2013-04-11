@@ -15,4 +15,5 @@ module.exports = (grunt) ->
 
   grunt.loadNpmTasks "grunt-coffeelint"
 
-  grunt.registerTask "default", ["coffeelint", "gruntest"]
+  grunt.registerTask "test", ["gruntest"]
+  grunt.registerTask "default", ["coffeelint", "test"]
