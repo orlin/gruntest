@@ -24,8 +24,11 @@ module.exports = (options = {}) ->
     b = browser
   else console.error "Bad driver style"
 
-  b = _.extend b, (require "./helpers/wd-#{options.style}")(options)
-  b = _.extend b, (require options.helpers)(options) if options.helpers?
+  kind = "wd-#{options.style}"
+  b = _.extend b, (require "./helpers/#{kind}")(options)
+  if options.helpers?
+    helpers = require options.helpers
+    b = _.extend b, helpers[kind](options) if helpers[kind]?
 
   b.on "status", (info) ->
     unless options.silent
