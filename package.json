@@ -1,14 +1,34 @@
 { "name": "gruntest"
 , "description": "mirror x 2 on the wall, who's the gruntest of them all?"
-, "keywords": [ "grunt", "test", "meta", "framework", "runner" ]
-, "version": "0.0.0"
+, "keywords": [ "grunt", "test", "testing", "webdriver", "options", "gruntplugin" ]
+, "version": "0.0.2"
 , "homepage": "http://gruntjs.com/"
 , "repository":
   { "type": "git"
   , "url": "git://github.com/orlin/gruntest.git"
   }
 , "author": "Orlin M Bozhinov <om@soundsapiens.com>"
-, "dependencies": {}
+, "contributors": []
+, "directories": { "lib": "./lib" }
+, "main": "index"
+, "dependencies":
+  { "coffee-script": "*"
+  , "lodash": "*"
+  , "eyes": "*"
+  , "wd": "*"
+  , "wd-sync": "*"
+  , "chai": "*"
+  , "runtimer": "*"
+  }
+, "peerDependencies": { "grunt": "0.4.x" }
+, "devDependencies":
+  { "grunt": "0.4.x"
+  , "grunt-cli": "*"
+  , "sg": "*"
+  , "grunt-coffeelint": "*"
+  , "findup-sync": "*"
+  }
+, "scripts": { "test": "grunt test" }
 , "licenses":
   [ { "type": "Unlicense"
     , "url" : "http://unlicense.org/"
