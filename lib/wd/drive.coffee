@@ -7,6 +7,11 @@ servers = require "../servers"
 
 module.exports = (options = {}) ->
   options.style ?= "sync"
+  kind = "wd-#{options.style}"
+  if options.helpers?
+    helpers = require options.helpers
+    options = _.merge helpers.options, options if helpers.options?
+
   options.serve ?= "localhost"
   options.drive ?= "phantomjs"
   options.silent ?= false
@@ -24,12 +29,8 @@ module.exports = (options = {}) ->
     b = browser
   else console.error "Bad driver style"
 
-  kind = "wd-#{options.style}"
   b = _.extend b, (require "./helpers/#{kind}")(options)
-  if options.helpers?
-    helpers = require options.helpers
-    options = _.merge options, helpers.options if helpers.options?
-    b = _.extend b, helpers[kind](options) if helpers[kind]?
+  b = _.extend b, helpers[kind](options) if helpers?[kind]?
 
   b.on "status", (info) ->
     unless options.silent
