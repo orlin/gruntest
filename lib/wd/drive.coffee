@@ -1,6 +1,6 @@
 wd = require "wd"
 wdSync = require "wd-sync"
-_ = require "underscore"
+_ = require "lodash"
 
 drivers = require "./drivers"
 servers = require "../servers"
@@ -28,6 +28,7 @@ module.exports = (options = {}) ->
   b = _.extend b, (require "./helpers/#{kind}")(options)
   if options.helpers?
     helpers = require options.helpers
+    options = _.merge options, helpers.options if helpers.options?
     b = _.extend b, helpers[kind](options) if helpers[kind]?
 
   b.on "status", (info) ->

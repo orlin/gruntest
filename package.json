@@ -13,7 +13,7 @@
 , "main": "index"
 , "dependencies":
   { "coffee-script": "*"
-  , "underscore": "*"
+  , "lodash": "*"
   , "eyes": "*"
   , "wd": "*"
   , "wd-sync": "*"
