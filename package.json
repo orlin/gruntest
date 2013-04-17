@@ -1,7 +1,7 @@
 { "name": "gruntest"
 , "description": "mirror x 2 on the wall, who's the gruntest of them all?"
 , "keywords": [ "grunt", "test", "testing", "webdriver", "options" ]
-, "version": "0.0.2"
+, "version": "0.0.3"
 , "homepage": "http://gruntjs.com/"
 , "repository":
   { "type": "git"
