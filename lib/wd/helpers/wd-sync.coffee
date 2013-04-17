@@ -5,7 +5,7 @@ assert = require("chai").assert
 module.exports = (options) ->
 
   behold: ->
-    inspect "@status": @status() unless options.silent
+    # inspect "@status": @status() unless options.silent # look at sessionCapabilities - duplicate info
     @init
       nativeEvents: true
       # browserName & driver don't matter unless `options.drive is "selenium"`
